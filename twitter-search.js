@@ -12,8 +12,8 @@ function search(){
     })
   })
   .fail(function(data){
-    var error = "Sorry, there is something wrong. Please try again in a bit. Thanks for your patience!"
-    $('#error').append(error);
+    var error = $('<p>').text("Sorry, there is something wrong. Please try again in a bit. Thanks for your patience!");
+    $('#errors').append(error);
   })
 }
 
