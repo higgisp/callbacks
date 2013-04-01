@@ -1,5 +1,23 @@
-<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-<script src="twitter-search.js" type="text/javascript"></script>
-<input type='text' id='query'></input>
-<button id='btn'>Search</button>
-<div id="results"></div>
+<html>
+  <head>
+    <title>Twitter Search</title>
+  </head>
+  <body>
+    <h1>Twitter Search</h1>
+    <input id="query">
+    <button id="btn">Search</button>
+    <ul id="results"></ul>
+    <script id="tweets" type="text/html">
+      <li>
+        <img src="{{profile_image_url}}" />
+        <p class="name"><a href="http://www.twitter.com/{{from_user}}">{{from_user}}</a></p>
+        <p>{{text}}</p>
+      </li>
+    </script>
+
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="twitter-search.js" type="text/javascript"></script>
+    <script src="ICanHaz.min.js" type="text/javascript"></script>
+  </body>
+</html>
+
