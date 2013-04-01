@@ -7,7 +7,7 @@ function search(){
   })
   .done(function(data){
     $.each(data.results, function(i, result){
-      var tweets = ich.tweet(result)
+      tweets = ich.tweets(result);
       $("#results").append(tweets);
     })
   })
